@@ -273,7 +273,7 @@ foreach (keys %manpages) {
 
 	print MAN $MAN_MIDDLE;
 
-	if (defined(@$also)) {
+	if (@$also) {
 		print MAN "\n.SH SEE ALSO\n\\fI";
 		print MAN join "\\fR, \\fI", @$also;
 		print MAN "\\fR.\nAnd ";
